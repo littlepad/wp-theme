@@ -1,0 +1,19 @@
+{
+  "name": "wp-theme",
+  "version": "1.0.0",
+  "description": "Theme for wordpress",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/littlepad/wp-theme.git"
+  },
+  "author": "littlepad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/littlepad/wp-theme/issues"
+  },
+  "homepage": "https://github.com/littlepad/wp-theme#readme"
+}
