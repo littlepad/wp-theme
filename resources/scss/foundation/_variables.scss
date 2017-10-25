@@ -1,0 +1,19 @@
+// font
+$font-family-default: 'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+$font-size-default: 16px;
+$line-height-default: 1.5;
+
+// text color
+$color-text-default: #333;
+
+// link color
+$color-link-default: #09c;
+$color-link-hover: #09c;
+$color-link-active: $color-link-hover;
+$color-link-visited: $color-link-default;
+
+// content
+$container-desktop: 980px;
+
+// screen(breakpoint)
+$screen-desktop: 768px;

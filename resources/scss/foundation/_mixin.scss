@@ -1,0 +1,9 @@
+// font-size
+@mixin fs( $size: $font-size-default ){
+  @if($size == 0px) {
+    font-size: 0;
+  } @else {
+    font-size: ( $size );
+    font-size: ( $size / $font-size-default ) + rem;
+  }
+}
