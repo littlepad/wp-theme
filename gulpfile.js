@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
+const autoprefixer = require('gulp-autoprefixer');
 const pug = require('gulp-pug');
 const browserSync = require('browser-sync');
 
@@ -23,6 +24,9 @@ gulp.task('sass', function() {
   return gulp.src(`${PATH.scss}**/*.scss`)
     .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS())
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions', 'ie >= 11']
+    }))
     .pipe(gulp.dest(`${PATH.theme}css/`));
 });
 
