@@ -21,7 +21,7 @@ gulp.task('pug', function() {
 });
 
 gulp.task('sass', function() {
-  return gulp.src(`${PATH.scss}**/*.scss`)
+  return gulp.src(`${PATH.scss}entries/*.scss`)
     .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS())
     .pipe(autoprefixer({
