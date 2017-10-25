@@ -1,5 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const cleanCSS = require('gulp-clean-css');
 const pug = require('gulp-pug');
 const browserSync = require('browser-sync');
 
@@ -21,6 +22,7 @@ gulp.task('pug', function() {
 gulp.task('sass', function() {
   return gulp.src(`${PATH.scss}**/*.scss`)
     .pipe(sass().on('error', sass.logError))
+    .pipe(cleanCSS())
     .pipe(gulp.dest(`${PATH.theme}css/`));
 });
 
