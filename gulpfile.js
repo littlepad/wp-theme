@@ -9,7 +9,8 @@ const PATH = {
   pug: './resources/pug/',
   scss: './resources/scss/',
   public: './public/',
-  theme: './public/blog/wp-content/themes/littlepad-2017/'
+  theme: './public/blog/wp-content/themes/littlepad-2017/',
+  mock: './mock_html/',
 };
 
 gulp.task('pug', function() {
@@ -17,10 +18,20 @@ gulp.task('pug', function() {
     .pipe(pug({
       'pretty': true
     }))
-    .pipe(gulp.dest(PATH.public));
+    .pipe(gulp.dest(PATH.mock));
 });
 
-gulp.task('sass', function() {
+gulp.task('dev-sass', function() {
+  return gulp.src(`${PATH.scss}entries/*.scss`)
+    .pipe(sass().on('error', sass.logError))
+    .pipe(cleanCSS())
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions', 'ie >= 11']
+    }))
+    .pipe(gulp.dest(`${PATH.mock}css/`));
+});
+
+gulp.task('build-sass', function() {
   return gulp.src(`${PATH.scss}entries/*.scss`)
     .pipe(sass().on('error', sass.logError))
     .pipe(cleanCSS())
@@ -32,14 +43,15 @@ gulp.task('sass', function() {
 
 gulp.task('server', function() {
   browserSync.init({
-    server: PATH.public,
+    server: PATH.mock,
     notify: false
   });
 });
 
 gulp.task('watch', function() {
-  gulp.watch(`${PATH.scss}**/*.scss`, ['sass']);
+  gulp.watch(`${PATH.scss}**/*.scss`, ['dev-sass']);
   gulp.watch(`${PATH.pug}**/*.pug`, ['pug']);
 });
 
 gulp.task('default', ['server', 'watch']);
+gulp.task('build', ['build-sass']);
