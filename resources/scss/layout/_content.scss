@@ -1,3 +1,5 @@
-.l-container {
-  border:solid 1px #f00;
+.l-content {
+  max-width: $screen-desktop;
+  margin: 0 auto;
+  padding: 0;
 }

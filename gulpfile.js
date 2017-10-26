@@ -9,7 +9,7 @@ const PATH = {
   pug: './resources/pug/',
   scss: './resources/scss/',
   public: './public/',
-  theme: './public/wp-content/themes/littlepad-2017/'
+  theme: './public/blog/wp-content/themes/littlepad-2017/'
 };
 
 gulp.task('pug', function() {
