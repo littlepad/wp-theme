@@ -1,0 +1,10 @@
+.l-footer {
+  padding: 20px;
+  text-align: center;
+
+   &__copyright {
+     margin: 0;
+     @include fs(10px);
+     line-height: 1;
+   }
+}
