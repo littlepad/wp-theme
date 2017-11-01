@@ -2,4 +2,8 @@
   max-width: $screen-desktop;
   margin: 0 auto;
   padding: 0;
+
+  @media screen and (min-width: $screen-desktop){
+    display: flex;
+  }
 }
