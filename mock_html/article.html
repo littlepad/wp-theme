@@ -37,7 +37,24 @@
         <div class="l-article">
           <main>
             <article>
-              <p>article</p>
+              <h1>og:imageチェッカーを作りました</h1>
+              <p><small>2017年3月30日 00:27 javascript — littlepad</small></p>
+              <p>ウェブページの og:image 画像をチェックするツールを作りました。<br>チェックしたい url を入れると各ページの og:image 画像をサムネイル表示します。その際、title, url, description も合わせて表示しています。</p><img src="images/ogimgchecker.jpg">
+              <h2>起動方法</h2>
+              <ul>
+                <li>下記 url から git clone するか、ダウンロードする<br><a href="https://github.com/littlepad/ogimage-checker">https://github.com/littlepad/ogimage-checker</a></li>
+                <li>初回だけ npm i で必要な node モジュールをインストールする</li>
+                <li>npm start で起動</li>
+                <li>ブラウザで http://localhost:3000/ へアクセス</li>
+              </ul>
+              <h2>作ろうと思った理由</h2>
+              <ul>
+                <li>サイトの META データ系を修正する際、title や description は grep で何とかなるが、og:image は割りと見落としがち</li>
+                <li>ページに設定されている og:image をひとつひとつ確認するのも手間</li>
+                <li>express を API 的な用途で試してみたかった</li>
+              </ul>
+              <h2>注意</h2>
+              <p>html ファイルをスクリピングして情報を取得しているため、サーバー側には負荷がかかります。ご利用は常識の範囲で。</p>
             </article>
           </main>
         </div>

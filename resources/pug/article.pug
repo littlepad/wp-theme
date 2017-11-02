@@ -1,4 +1,40 @@
 extends _base
 
 block main
-    p article
+    h1 og:imageチェッカーを作りました
+
+    p
+        small 2017年3月30日 00:27 javascript — littlepad
+
+    p
+        | ウェブページの og:image 画像をチェックするツールを作りました。
+        br
+        | チェックしたい url を入れると各ページの og:image 画像をサムネイル表示します。その際、title, url, description も合わせて表示しています。
+
+    img(src='images/ogimgchecker.jpg')
+
+    h2 起動方法
+
+    ul
+        li
+            | 下記 url から git clone するか、ダウンロードする
+            br
+            a(href='https://github.com/littlepad/ogimage-checker') https://github.com/littlepad/ogimage-checker
+        li
+            | 初回だけ npm i で必要な node モジュールをインストールする
+        li
+            | npm start で起動
+        li
+            | ブラウザで http://localhost:3000/ へアクセス
+
+    h2 作ろうと思った理由
+
+    ul
+        li サイトの META データ系を修正する際、title や description は grep で何とかなるが、og:image は割りと見落としがち
+        li ページに設定されている og:image をひとつひとつ確認するのも手間
+        li express を API 的な用途で試してみたかった
+
+    h2 注意
+
+    p
+        | html ファイルをスクリピングして情報を取得しているため、サーバー側には負荷がかかります。ご利用は常識の範囲で。
