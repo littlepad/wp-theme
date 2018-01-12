@@ -1,0 +1,20 @@
+.l-about,
+.l-archive,
+.l-category,
+.l-search {
+  &__head {
+    @include fs($font-size-default + 6px);
+  }
+
+  &__body {
+    @include fs(11px);
+  }
+
+  @media screen and (min-width: $screen-desktop){
+    @include fs($font-size-default-desktop + 6px);
+
+    &__head {
+      margin: 0 0 3px;
+    }
+  }
+}

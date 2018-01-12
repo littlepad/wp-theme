@@ -1,10 +1,51 @@
 .l-footer {
-  padding: 20px;
-  text-align: center;
+  margin: 0 $gutter;
 
-   &__copyright {
-     margin: 0;
-     @include fs(10px);
-     line-height: 1;
-   }
+  &__body {
+    padding: 15px 0;
+    border-top: solid 1px #eee;
+  }
+
+  &__about,
+  &__category,
+  &__search {
+    margin-bottom: 15px;
+  }
+
+  &__foot {
+    margin: 0;
+    padding: 20px 0;
+    border-top: solid 1px #eee;
+    text-align: center;
+    @include fs(10px);
+    line-height: 1;
+  }
+
+  @media screen and (min-width: $screen-desktop){
+    max-width: $footer-desktop;
+    margin: 0 auto;
+
+    &__body {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0 30px;
+    }
+
+    &__about,
+    &__category,
+    &__search-archive {
+      margin: 0;
+      width: 30%;
+    }
+
+    &__search {
+      margin: 0;
+    }
+    &__archive {
+    }
+    &__foot {
+      padding: 30px 0;
+      @include fs(14px);
+    }
+  }
 }
