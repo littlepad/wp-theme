@@ -4,6 +4,7 @@
   "description": "Theme for wordpress",
   "main": "index.js",
   "scripts": {
+    "start": "npm i && gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
