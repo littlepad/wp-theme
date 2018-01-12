@@ -2,21 +2,40 @@
   h1, h2, h3, h4, h5, h6 {
     margin: 0 0 .5em 0;
     line-height: 1.4;
+    letter-spacing: -.015em;
   }
   h1 {
-    @include fs($font-size-default + 8px);
+    @include fs($font-size-default + 10px);
   }
   h2 {
-    @include fs($font-size-default + 6px);
+    @include fs($font-size-default + 8px);
   }
   h3 {
-    @include fs($font-size-default + 4px);
+    @include fs($font-size-default + 6px);
   }
   h4 {
-    @include fs($font-size-default + 2px);
+    @include fs($font-size-default + 4px);
   }
   h5,h6 {
-    @include fs($font-size-default);
+    @include fs($font-size-default + 2px);
+  }
+
+  @media screen and (min-width: $screen-desktop){
+    h1 {
+      @include fs($font-size-default-desktop + 10px);
+    }
+    h2 {
+      @include fs($font-size-default-desktop + 8px);
+    }
+    h3 {
+      @include fs($font-size-default-desktop + 6px);
+    }
+    h4 {
+      @include fs($font-size-default-desktop + 4px);
+    }
+    h5,h6 {
+      @include fs($font-size-default-desktop + 2px);
+    }
   }
 
   p {

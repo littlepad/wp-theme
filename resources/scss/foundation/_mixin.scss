@@ -1,9 +1,12 @@
 // font-size
-@mixin fs( $size: $font-size-default ){
+@mixin fs( $size ){
   @if($size == 0px) {
     font-size: 0;
   } @else {
     font-size: ( $size );
     font-size: ( $size / $font-size-default ) + rem;
+    @media screen and (min-width: $screen-desktop){
+      font-size: ( $size / $font-size-default-desktop ) + rem;
+    }
   }
 }

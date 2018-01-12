@@ -4,6 +4,10 @@ html {
   line-height: $line-height-default;
   color: $color-text-default;
   height: 100%;
+
+  @media screen and (min-width: $screen-desktop){
+    font-size: $font-size-default-desktop;
+  }
 }
 
 body {
