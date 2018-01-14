@@ -60,10 +60,26 @@
     margin: 0 0 1em 0;
   }
 
+  code {
+    display: inline-block;
+    padding: .2em .4em;
+    vertical-align: bottom;
+    @include fs($font-size-default - 4px);
+    font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+    background: #eee;
+    overflow: hidden;
+    border-radius: 2px;
+    white-space: pre-wrap;
+  }
+
   &__info {
 
   }
 
   @media screen and (min-width: $screen-desktop){
+    code {
+      padding: .2em .6em;
+      @include fs($font-size-default-desktop - 4px);
+    }
   }
 }
