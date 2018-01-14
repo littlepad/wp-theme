@@ -1,9 +1,9 @@
 .l-content {
-  margin: 0 $gutter;
+  margin: 0 $gutter 40px;
   padding: 0;
 
   @media screen and (min-width: $screen-desktop){
-    margin: 0 auto;
+    margin: 0 auto 50px;
     max-width: $content-desktop;
   }
 }
