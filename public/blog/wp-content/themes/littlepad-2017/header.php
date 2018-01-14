@@ -22,8 +22,7 @@
 <meta property="og:image" content="<?php bloginfo('url'); ?>/wp-content/themes/littlepad-html5-responsive/images/ogimg.png">
 <?php endif; ?>
 <title><?php wp_title('|', true, 'right'); ?>littlepad blog</title>
-<link href="<?php bloginfo('url'); ?>/wp-content/themes/littlepad-2017/css/import.css" rel="stylesheet" type="text/css" media="screen,print">
-<!--<link href='http://fonts.googleapis.com/css?family=Crimson+Text' rel='stylesheet' type='text/css'>-->
+<link href="<?php bloginfo('url'); ?>/wp-content/themes/littlepad-2017/css/index.css" rel="stylesheet" type="text/css" media="screen,print">
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 <?php wp_get_archives('type=monthly&format=link'); ?>
 <?php //comments_popup_script(); // off by default ?>
@@ -31,22 +30,6 @@
 <script>
 google.load("jquery", "1.4");
 </script>
-<script src="<?php bloginfo('url'); ?>/wp-content/themes/littlepad-html5/js/common.js" type="text/javascript"></script>
-<script src="<?php bloginfo('url'); ?>/wp-content/themes/littlepad-html5/js/shCore.js" type="text/javascript"></script>
-<script src="<?php bloginfo('url'); ?>/wp-content/themes/littlepad-html5/js/shBrushJScript.js" type="text/javascript"></script>
-<script src="<?php bloginfo('url'); ?>/wp-content/themes/littlepad-html5/js/shBrushAS3.js" type="text/javascript"></script>
-<script src="<?php bloginfo('url'); ?>/wp-content/themes/littlepad-html5/js/shBrushCss.js" type="text/javascript"></script>
-<script src="<?php bloginfo('url'); ?>/wp-content/themes/littlepad-html5/js/shBrushXml.js" type="text/javascript"></script>
-<script src="<?php bloginfo('url'); ?>/wp-content/themes/littlepad-html5/js/shBrushPlain.js" type="text/javascript"></script>
-<script src="<?php bloginfo('url'); ?>/wp-content/themes/littlepad-html5/js/shBrushPhp.js" type="text/javascript"></script>
-<script src="<?php bloginfo('url'); ?>/wp-content/themes/littlepad-html5/js/shBrushRuby.js" type="text/javascript"></script>
-<script src="<?php bloginfo('url'); ?>/wp-content/themes/littlepad-html5/js/shBrushLua.js" type="text/javascript"></script>
-<script type="text/javascript">
-	SyntaxHighlighter.all();
-</script>
-<!--[if lt IE 9]>
-<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->
 <?php wp_head(); ?>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -64,10 +47,12 @@ google.load("jquery", "1.4");
 <script type="text/javascript" src="http://fast.fonts.com/jsapi/e4928927-f0b8-49fa-9856-374587402d3a.js"></script>
 <?php if( is_single() ) : ?>
 <?php endif; ?>
-<div id="container">
+<div class="l-container">
 
-<header id="globalHeader">
-<h1><a href="<?php bloginfo('url'); ?>">LITTLEPAD BLOG</a></h1>
-<!-- /#globalHeader --></header>
+<header>
+<div class="l-header">
+<p class="l-header__title"><a href="<?php bloginfo('url'); ?>">LITTLEPAD BLOG</a></p>
+</div>
+</header>
 
-<div id="contents">
+<div class="l-content">

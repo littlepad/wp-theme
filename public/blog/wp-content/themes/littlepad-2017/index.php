@@ -6,7 +6,9 @@
 get_header();
 ?>
 
-<div id="main">
+<div class="l-article">
+<main>
+<article>
 
 <?php if ( is_category() ) { ?>
      <p><strong>“<?php single_cat_title() ?>”</strong> のアーカイブ</p>
@@ -18,7 +20,7 @@ get_header();
 
 <section>
 <header>
-<h2><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+<h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
 <p class="meta"><?php the_date(); ?> <?php the_time() ?> <?php the_category(',') ?> &#8212; <?php the_tags(__('Tags: '), ', ', ' &#8212; '); ?> <?php the_author() ?> <?php edit_post_link(__('Edit This')); ?></p>
 </header>
 
@@ -39,7 +41,9 @@ get_header();
 <?php endif; ?>
 
 <p class="navLink"><?php posts_nav_link(' | ', '&laquo; Newer Posts', 'Older Posts &raquo;'); ?></p>
-<!-- /#main --></div>
+</article>
+</main>
+</div>
 
 <?php get_sidebar(); ?>
 
