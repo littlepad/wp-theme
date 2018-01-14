@@ -28,7 +28,8 @@ gulp.task('dev-sass', function() {
     .pipe(autoprefixer({
       browsers: ['last 2 versions', 'ie >= 11']
     }))
-    .pipe(gulp.dest(`${PATH.mock}css/`));
+    .pipe(gulp.dest(`${PATH.mock}css/`))
+    .pipe(gulp.dest(`${PATH.theme}css/`));
 });
 
 gulp.task('build-sass', function() {
