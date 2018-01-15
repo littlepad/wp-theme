@@ -47,8 +47,6 @@ get_header();
 </main>
 </div>
 
-<?php get_sidebar(); ?>
-
 <p class="pageTop"><a href="#PAGETOP">GO TO PAGETOP</a></p>
 
 <?php get_footer(); ?>

@@ -1,0 +1,13 @@
+.l-archive {
+  line-height: 1;
+
+  select {
+    @include fs($font-size-default - 4px);
+  }
+
+  @media screen and (min-width: $screen-desktop){
+    select {
+      @include fs($font-size-default-desktop - 4px);
+    }
+  }
+}

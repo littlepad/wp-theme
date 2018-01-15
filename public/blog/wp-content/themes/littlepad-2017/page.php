@@ -34,8 +34,6 @@ get_header();
 <p class="navLink"><?php posts_nav_link(' | ', '&laquo; Newer Posts', 'Older Posts &raquo;'); ?></p>
 <!-- /#main --></div>
 
-<?php get_sidebar(); ?>
-
 <p class="pageTop"><a href="#PAGETOP">GO TO PAGETOP</a></p>
 
 <?php get_footer(); ?>

@@ -1,0 +1,29 @@
+.l-search {
+  display: flex;
+
+  input {
+    height: 1.6em;
+
+    &[type='text'] {
+      flex: 3;
+      width: 100%;
+      @include fs($font-size-default - 4px);
+    }
+    &[type='submit'] {
+      flex: 1;
+      margin-left: 10px;
+      @include fs($font-size-default - 4px);
+    }
+  }
+
+  @media screen and (min-width: $screen-desktop){
+    input {
+      &[type='text'] {
+        @include fs($font-size-default-desktop - 4px);
+      }
+      &[type='submit'] {
+        @include fs($font-size-default-desktop - 4px);
+      }
+    }
+  }
+}
