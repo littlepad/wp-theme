@@ -19,10 +19,12 @@ get_header();
 <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 <section>
-<header>
-<h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+<?php if( is_single() ) : ?>
+  <h1><?php the_title(); ?></h1>
+<?php else: ?>
+  <h1><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></h1>
+<?php endif; ?>
 <p class="meta"><?php the_date(); ?> <?php the_time() ?> <?php the_category(',') ?> &#8212; <?php the_tags(__('Tags: '), ', ', ' &#8212; '); ?> <?php the_author() ?> <?php edit_post_link(__('Edit This')); ?></p>
-</header>
 
 <div class="entryContent">
 <?php the_content(__('[ → 続きを読む ]')); ?>
