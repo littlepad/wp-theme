@@ -20,7 +20,6 @@
 <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/images/ogimg.png">
 <title><?php wp_title('|', true, 'right'); ?>littlepad blog</title>
 <link rel="https://api.w.org/" href="https://littlepad.net/blog/wp-json/">
-<link rel="canonical" href="<?php the_permalink() ?>">
 <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/index.css">
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>">
 <?php wp_get_archives('type=monthly&format=link'); ?>
