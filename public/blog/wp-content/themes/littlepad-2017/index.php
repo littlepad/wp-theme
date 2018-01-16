@@ -22,8 +22,9 @@ get_header();
         <div class="entryContent">
           <?php the_content(__('[ → 続きを読む ]')); ?>
           <div class="m-attribute">
-            <p class="m-category-list">カテゴリー: <?php the_category(',') ?></p>
-            <p class="m-tag-list"><?php the_tags(__('Tags: '), ' ', ''); ?></p>
+            <p>
+              <span class="m-category-list">カテゴリー: <?php the_category(',') ?></span>　<span class="m-tag-list"><?php the_tags(__('Tags: '), ' ', ''); ?></span>
+            </p>
           </div>
         </div>
         <?php comments_template(); // Get wp-comments.php template ?>
