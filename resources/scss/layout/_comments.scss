@@ -1,0 +1,17 @@
+.l-comments {
+  &__heading {
+    padding: .5em 0;
+    border-top: solid 1px #eee;
+    border-bottom: dotted 1px #eee;
+  }
+
+  &__list {
+    @include fs($font-size-default - 2px);
+  }
+
+  @media screen and (min-width: $screen-desktop){
+    &__list {
+      @include fs($font-size-default-desktop - 2px);
+    }
+  }
+}
