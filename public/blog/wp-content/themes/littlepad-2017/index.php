@@ -30,6 +30,7 @@ get_header();
         <?php comments_template(); // Get wp-comments.php template ?>
         <p class="feedback"><?php wp_link_pages(); ?><?php comments_popup_link(__('Comments (0)'), __('Comments (1)'), __('Comments (%)')); ?></p>
       <?php elseif (have_posts()) : ?>
+        <h1>記事一覧</h1>
         <ul>
         <?php while (have_posts()) : the_post(); ?>
           <li><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a></li>
