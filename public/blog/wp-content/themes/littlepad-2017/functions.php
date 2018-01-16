@@ -25,11 +25,4 @@ remove_action('wp_head','wp_oembed_add_discovery_links');
 remove_action('wp_head','rest_output_link_wp_head');
 remove_action('admin_print_scripts', 'print_emoji_detection_script');
 remove_action('wp_print_styles', 'print_emoji_styles');
-remove_action('admin_print_styles', 'print_emoji_styles');
-remove_action('template_redirect', '_wp_admin_bar_init', 0);
-remove_action('admin_init', '_wp_admin_bar_init');
-remove_action('before_signup_header', '_wp_admin_bar_init');
-remove_action('activate_header', '_wp_admin_bar_init');
-remove_action('wp_footer', 'wp_admin_bar_render', 1000);
-remove_action('in_admin_header', 'wp_admin_bar_render', 0);
 ?>
