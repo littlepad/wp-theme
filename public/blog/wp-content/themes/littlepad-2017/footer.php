@@ -19,7 +19,7 @@
         <div class="m-footer-content">
           <div class="m-footer-content__head">category</div>
           <div class="m-footer-content__body">
-            <div class="l-category-list">
+            <div class="m-category-list">
               <ul>
                 <?php wp_list_categories('title_li='); ?>
               </ul>

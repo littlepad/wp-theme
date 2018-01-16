@@ -18,9 +18,13 @@ get_header();
 
       <?php if ( is_single() ) : the_post(); ?>
         <h1><?php the_title(); ?></h1>
-        <p class="m-attribute"><?php the_date(); ?> <?php the_time() ?> <?php the_category(',') ?> &#8212; <?php the_tags(__('Tags: '), ', ', ' &#8212; '); ?> <?php the_author() ?> <?php edit_post_link(__('Edit This')); ?></p>
+        <p class="m-attribute"><?php the_date(); ?> <?php the_time() ?> <?php the_author() ?> <?php edit_post_link(__('Edit This')); ?></p>
         <div class="entryContent">
           <?php the_content(__('[ → 続きを読む ]')); ?>
+          <div class="m-attribute">
+            <p class="m-category-list">カテゴリー: <?php the_category(',') ?></p>
+            <p class="m-tag-list"><?php the_tags(__('Tags: '), ' ', ''); ?></p>
+          </div>
         </div>
         <?php comments_template(); // Get wp-comments.php template ?>
         <p class="feedback"><?php wp_link_pages(); ?><?php comments_popup_link(__('Comments (0)'), __('Comments (1)'), __('Comments (%)')); ?></p>
