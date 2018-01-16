@@ -1,6 +1,7 @@
 .m-attribute {
   @include fs($font-size-default - 6px);
   color: #666;
+  vertical-align: middle;
 
   @media screen and (min-width: $screen-desktop) {
     @include fs($font-size-default-desktop - 6px);
