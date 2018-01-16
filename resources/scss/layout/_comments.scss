@@ -1,6 +1,8 @@
 .l-comments {
   &__heading {
     padding: .5em 0;
+    @include fs($font-size-default - 2px);
+    font-weight: bold;
     border-top: solid 1px #eee;
     border-bottom: dotted 1px #eee;
   }
@@ -10,6 +12,10 @@
   }
 
   @media screen and (min-width: $screen-desktop){
+    &__heading {
+      @include fs($font-size-default-desktop - 2px);
+    }
+
     &__list {
       @include fs($font-size-default-desktop - 2px);
     }

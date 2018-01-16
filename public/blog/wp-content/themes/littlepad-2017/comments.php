@@ -8,7 +8,7 @@ if ( post_password_required() ) : ?>
 <?php return; endif; ?>
 
 <div id="comments" class="l-comments">
-<h6 class="l-comments__heading"><?php comments_number(__('No Comments'), __('1 Comment'), __('% Comments')); ?></h6>
+<p class="l-comments__heading"><?php comments_number(__('No Comments'), __('1 Comment'), __('% Comments')); ?></p>
 
 <?php if ( have_comments() ) : ?>
 <ol id="commentlist" class="l-comments__list"><?php foreach ($comments as $comment) : ?>
@@ -32,7 +32,7 @@ if ( post_password_required() ) : ?>
 
 <?php if ( comments_open() ) : ?>
 <div id="postcomment">
-<h6 class="l-comments__heading"><?php _e('Leave a comment'); ?></h6>
+<p class="l-comments__heading"><?php _e('Leave a comment'); ?></p>
 
 <?php if ( get_option('comment_registration') && !is_user_logged_in() ) : ?>
 <p><?php printf(__('You must be <a href="%s">logged in</a> to post a comment.'), wp_login_url( get_permalink() ) );?></p>
