@@ -1,3 +1,4 @@
 .idea/
 node_modules/
 public/blog/wp-content/plugins/
+public/blog/wp-content/uploads/
