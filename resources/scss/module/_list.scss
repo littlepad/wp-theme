@@ -1,0 +1,15 @@
+.m-list {
+  ul {
+    margin: 0 0 1em 0;
+    padding-left: 1.5em;
+  }
+
+  li {
+    margin-bottom: .5em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: $screen-desktop){
+  }
+}
