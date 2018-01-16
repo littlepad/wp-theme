@@ -35,7 +35,7 @@
 </script>
 </head>
 
-<body id="PAGETOP">
+<body>
 <?php if( is_single() ) : ?>
   <header>
     <div class="l-header">
