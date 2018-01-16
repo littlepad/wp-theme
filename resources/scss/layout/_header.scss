@@ -1,11 +1,39 @@
 .l-header {
-  padding: 20px;
+  margin: 0 0 15px;
+  padding: 8px 0;
   text-align: center;
+  background: #333;
 
-   &__title {
-     margin: 0;
-     @include fs(14px);
-     font-weight: bold;
-     line-height: 1;
-   }
+  &__title {
+    margin: 0;
+    padding: 0;
+    @include fs($font-size-default - 4px);
+    color: #ccc;
+    line-height: 1;
+
+    a {
+      display: block;
+      color: #ccc;
+      text-decoration: none;
+
+      &:hover {
+        color: #ccc;
+      }
+      &:active {
+        color: #ccc;
+      }
+      &:visited {
+        color: #ccc;
+      }
+    }
+  }
+
+  @media screen and (min-width: $screen-desktop){
+    margin: 0 0 30px;
+
+    &__title {
+      @include fs($font-size-default-desktop - 8px);
+    }
+
+  }
 }
