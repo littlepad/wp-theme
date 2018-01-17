@@ -33,7 +33,7 @@ get_header();
         <h1>記事一覧</h1>
         <ul>
         <?php while (have_posts()) : the_post(); ?>
-          <li><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a> <span class="m-attribute">(<?php the_time('Y年n月d日'); ?>)</span></li>
+          <li><a href="<?php the_permalink() ?>" rel="bookmark"><?php the_title(); ?></a> <span class="m-attribute">(<?php the_time('Y年n月j日'); ?>)</span></li>
         <?php endwhile; ?>
         </ul>
       <?php else: ?>
