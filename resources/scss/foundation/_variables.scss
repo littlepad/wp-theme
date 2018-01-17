@@ -4,8 +4,14 @@ $font-size-default: 16px;
 $font-size-default-desktop: 20px;
 $line-height-default: 1.5;
 
+// gray color
+$color-gray-lighter: #eee;
+$color-gray-light: #ccc;
+$color-gray: #666;
+$color-gray-dark: #333;
+
 // text color
-$color-text-default: #333;
+$color-text-default: $color-gray-dark;
 
 // link color
 $color-link-default: #09c;

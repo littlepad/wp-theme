@@ -3,8 +3,8 @@
     padding: .5em 0;
     @include fs($font-size-default - 2px);
     font-weight: bold;
-    border-top: solid 1px #eee;
-    border-bottom: dotted 1px #eee;
+    border-top: solid 1px $color-gray-lighter;
+    border-bottom: dotted 1px $color-gray-lighter;
   }
 
   &__list {

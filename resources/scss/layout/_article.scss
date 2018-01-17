@@ -66,7 +66,7 @@
     vertical-align: bottom;
     @include fs($font-size-default - 4px);
     font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-    background: #eee;
+    background: $color-gray-lighter;
     overflow: hidden;
     border-radius: 2px;
     white-space: pre-wrap;

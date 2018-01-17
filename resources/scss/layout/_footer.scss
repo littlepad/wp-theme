@@ -3,7 +3,7 @@
 
   &__body {
     padding: 15px 0;
-    border-top: solid 1px #eee;
+    border-top: solid 1px $color-gray-lighter;
   }
 
   &__content {
@@ -18,7 +18,7 @@
   &__foot {
     margin: 0;
     padding: 20px 0;
-    border-top: solid 1px #eee;
+    border-top: solid 1px $color-gray-lighter;
     text-align: center;
     @include fs($font-size-default - 6px);
     line-height: 1;

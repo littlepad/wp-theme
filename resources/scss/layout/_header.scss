@@ -2,28 +2,28 @@
   margin: 0 0 15px;
   padding: 8px 0;
   text-align: center;
-  background: #333;
+  background: $color-gray-dark;
 
   &__title {
     margin: 0;
     padding: 0;
     @include fs($font-size-default - 4px);
-    color: #ccc;
+    color: $color-gray-light;
     line-height: 1;
 
     a {
       display: block;
-      color: #ccc;
+      color: $color-gray-light;
       text-decoration: none;
 
       &:hover {
-        color: #ccc;
+        color: $color-gray-light;
       }
       &:active {
-        color: #ccc;
+        color: $color-gray-light;
       }
       &:visited {
-        color: #ccc;
+        color: $color-gray-light;
       }
     }
   }

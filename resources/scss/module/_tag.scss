@@ -1,22 +1,22 @@
 .m-tag {
   display: inline-block;
   padding: .2em .4em;
-  background: #eee;
+  background: $color-gray-lighter;
   @include fs(11px);
-  color: #666;
+  color: $color-gray;
   text-decoration: none;
   border-radius: 2px;
 
   &:hover {
-    color: #666;
+    color: $color-gray;
     background: #f6f6f6;
   }
   &:active {
-    color: #666;
+    color: $color-gray;
     background: #f6f6f6;
   }
   &:visited {
-    color: #666;
+    color: $color-gray;
   }
 
   @media screen and (min-width: $screen-desktop){
