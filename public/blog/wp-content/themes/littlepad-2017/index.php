@@ -10,7 +10,7 @@ get_header();
   <main>
     <article>
 
-      <?php if ( is_category() ) { ?>
+      <?php if ( is_category() || is_tag() ) { ?>
         <p><strong>“<?php single_cat_title() ?>”</strong> のアーカイブ</p>
       <?php } elseif ( is_month() ) { ?>
         <p><strong><?php the_time('Y'); ?>年<?php the_time('n'); ?>月</strong> のアーカイブ</p>
