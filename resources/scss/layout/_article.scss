@@ -72,6 +72,11 @@
     white-space: pre-wrap;
   }
 
+  pre code {
+    display: block;
+    padding: .5em 1em;
+  }
+
   &__info {
 
   }
