@@ -36,19 +36,11 @@
 </head>
 
 <body>
-<?php if( is_home() ) : ?>
-  <header>
-    <div class="l-header">
-      <p class="l-header__title"><?php bloginfo('name') ?></p>
-    </div>
-  </header>
-<?php else: ?>
   <header>
     <div class="l-header">
       <p class="l-header__title"><a href="<?php bloginfo('url'); ?>"><?php bloginfo('name') ?></a></p>
     </div>
   </header>
-<?php endif; ?>
 <div class="l-container">
 
 <div class="l-content">
