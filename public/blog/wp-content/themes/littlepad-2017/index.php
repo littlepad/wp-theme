@@ -18,7 +18,7 @@ get_header();
 
       <?php if ( is_single() ) : the_post(); ?>
         <h1><?php the_title(); ?></h1>
-        <p class="m-attribute"><?php the_date(); ?> <?php the_time() ?> <?php the_author() ?> <?php edit_post_link(__('Edit This')); ?></p>
+        <p class="m-attribute"><?php the_date(); ?> <?php the_time() ?> <?php edit_post_link(__('Edit This')); ?></p>
         <div class="entryContent">
           <?php the_content(__('[ → 続きを読む ]')); ?>
           <div class="m-attribute">
