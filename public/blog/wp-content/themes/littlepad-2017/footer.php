@@ -56,7 +56,7 @@
         </div>
       </div>
     </div>
-    <p class="l-footer__foot"><small>&copy;littlepad</small></p>
+    <p class="l-footer__foot"><small><a href="<?php bloginfo('url'); ?>">&copy;<?php bloginfo('name') ?></a></small></p>
   </div>
 </footer>
 
