@@ -12,7 +12,7 @@
       <div class="l-footer__content l-footer__content--about">
         <div class="m-footer-content">
           <div class="m-footer-content__head">about</div>
-          <div class="m-footer-content__body">ハンドルネーム：littlepad<br>都内で WEB 制作（デザイン, html/css, Flash, MT, WordPress etc）をしているBOØWY研究家</div>
+          <div class="m-footer-content__body"><a href="https://twitter.com/litttlepad">littlepad</a><br>WEBのフロントまわり（html/css, JavaScript, Flash/Flex, MT, WordPress, SEO etc）をしているBOØWY研究家</div>
         </div>
       </div>
       <div class="l-footer__content l-footer__content--category">
